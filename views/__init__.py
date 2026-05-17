@@ -1,1 +1,1 @@
-from . import about
+from views import companion, toolbox, about, guess_word
