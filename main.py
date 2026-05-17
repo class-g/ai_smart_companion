@@ -2,7 +2,8 @@ import streamlit as st
 
 from utils.session import init_session_state, switch_page
 from utils.image import show_gif
-from views import companion, toolbox, about, guess_word
+# from views import companion, toolbox, about, guess_word
+from views import about
 
 # ==================== 页面配置 ====================
 
@@ -21,9 +22,9 @@ st.logo('哆啦A梦.gif', size='large')
 # ==================== 页面注册表 ====================
 
 PAGES = {
-    'AI智能伴侣': {'icon': '💬', 'title': '💬 AI智能伴侣', 'module': companion},
-    'AI汉子谜盒': {'icon': '🎯', 'title': '🎯 AI汉子谜盒', 'module': guess_word},
-    '工具箱':  {'icon': '🛠️', 'title': '🛠️ 工具箱', 'module': toolbox},
+    # 'AI智能伴侣': {'icon': '💬', 'title': '💬 AI智能伴侣', 'module': companion},
+    # 'AI汉子谜盒': {'icon': '🎯', 'title': '🎯 AI汉子谜盒', 'module': guess_word},
+    # '工具箱':  {'icon': '🛠️', 'title': '🛠️ 工具箱', 'module': toolbox},
     '关于':   {'icon': 'ℹ️', 'title': 'ℹ️ 关于', 'module': about},
 }
 
